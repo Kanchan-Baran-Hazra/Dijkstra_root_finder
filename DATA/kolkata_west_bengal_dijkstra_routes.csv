@@ -1,0 +1,253 @@
+Source,Destination,Distance_km,Travel_Time_min,Road_Type,Condition
+Airport (CCU),Barasat,11.23,27,Jessore Road,Heavy Traffic
+Airport (CCU),Dum Dum,8.58,26,Jessore Road,Heavy Traffic
+Airport (CCU),Madhyamgram,6.3,14,Jessore Road (NH 12),Excellent
+Airport (CCU),New Town Action Area 1,11.39,28,Major Arterial Road,Good
+Airport (CCU),Ultadanga,12.46,33,VIP Road,Heavy Traffic
+Alipore,Behala,5.38,12,DH Road,Good
+Alipore,Rabindra Sadan,2.44,7,City Road,Excellent
+Alipurduar,Cooch Behar,24.58,36,NH 317A,Moderate
+Alipurduar,Jalpaiguri,93.75,105,NH 317,Heavy Traffic
+Asansol,Purulia,86.78,102,NH 32,Moderate
+Asansol,Raghunathpur,41.42,57,SH 5,Heavy Traffic
+Asansol,Raniganj,22.42,29,NH 19,Good
+BBD Bagh,Esplanade,1.4,4,City Main Road,Heavy Traffic
+BBD Bagh,Howrah Station,1.76,5,Bridge / City Road,Moderate
+BBD Bagh,Khidirpur,5.94,19,Strand Road,Excellent
+BBD Bagh,MG Road Kolkata,1.76,4,Central Avenue,Excellent
+BBD Bagh,Park Street,2.98,6,Red Road,Heavy Traffic
+Bakkhali,Kakdwip,43.97,74,NH 117,Heavy Traffic
+Bally,Belur Math,3.73,12,GT Road,Heavy Traffic
+Bally,Dankuni,7.24,20,NH 19,Good
+Bally,Howrah Station,10.26,28,GT Road,Moderate
+Bally,Shambazar,8.33,19,BT Road,Excellent
+Ballygunge,Dhakuria,3.12,7,Southern Avenue,Heavy Traffic
+Ballygunge,Gariahat,1.41,4,City Connector,Good
+Ballygunge,Park Street,4.22,13,City Main Road,Heavy Traffic
+Ballygunge,Sealdah Station,5.99,19,Suburban Connector,Good
+Balurghat,Malda Town,79.64,85,SH 10,Heavy Traffic
+Bandel,Chinsurah,5.16,14,GT Road,Moderate
+Bandel,Kalyani,11.27,25,STKK Road,Good
+Bankura,Bishnupur,39.63,64,NH 60,Heavy Traffic
+Bankura,Midnapore,109.82,113,NH 60,Excellent
+Bankura,Purulia,87.54,97,NH 314,Good
+Barasat,Airport (CCU),11.23,27,Jessore Road,Heavy Traffic
+Barasat,Barrackpore,16.71,42,Road Connector,Excellent
+Barasat,Habra,25.17,33,NH 12,Moderate
+Barasat,Krishnanagar,88.65,99,NH 12,Excellent
+Barasat,Madhyamgram,5.34,13,NH 12,Heavy Traffic
+Bardhaman,Bolpur Santiniketan,65.79,95,SH 7,Excellent
+Bardhaman,Dankuni,91.6,86,NH 19,Good
+Bardhaman,Durgapur,77.17,84,NH 19,Excellent
+Barrackpore,Barasat,16.71,42,Road Connector,Excellent
+Barrackpore,Naihati,19.5,26,State Highway,Excellent
+Barrackpore,Serampore,4.36,10,Ferry / Local Connector,Good
+Barrackpore,Sodepur,10.8,32,BT Road,Excellent
+Basirhat,Habra,40.02,56,State Highway 2,Excellent
+Behala,Alipore,5.38,12,DH Road,Good
+Behala,Diamond Harbour,47.36,62,Diamond Harbour Road (NH 117),Excellent
+Behala,Taratala,1.34,3,Diamond Harbour Road,Moderate
+Behala,Tollygunge,4.14,13,Diamond Harbour Road Connector,Excellent
+Belur Math,Bally,3.73,12,GT Road,Heavy Traffic
+Berhampore,Farakka,100.88,115,NH 12,Good
+Berhampore,Krishnanagar,98.42,105,NH 12,Moderate
+Berhampore,Murshidabad,12.73,30,State Highway,Good
+Bhowanipore,Hazra,1.28,3,City Main Road,Moderate
+Bhowanipore,Rabindra Sadan,1.19,3,City Main Road,Good
+Bishnupur,Bankura,39.63,64,NH 60,Heavy Traffic
+Bishnupur,Durgapur,60.92,89,State Highway,Moderate
+Bolpur Santiniketan,Bardhaman,65.79,95,SH 7,Excellent
+Bolpur Santiniketan,Suri,38.15,48,SH 7,Moderate
+Canning,Garia,41.13,62,State Highway 1,Heavy Traffic
+Chandannagar,Chinsurah,5.75,16,GT Road,Moderate
+Chandannagar,Serampore,17.47,39,GT Road,Heavy Traffic
+Chinsurah,Bandel,5.16,14,GT Road,Moderate
+Chinsurah,Chandannagar,5.75,16,GT Road,Moderate
+Chinsurah,Dankuni,33.14,46,Durgapur Expressway,Heavy Traffic
+College Street,Girish Park,1.8,4,Central Avenue,Heavy Traffic
+College Street,MG Road Kolkata,1.3,3,City Center,Moderate
+College Street,Sealdah Station,1.51,4,City Road,Moderate
+Cooch Behar,Alipurduar,24.58,36,NH 317A,Moderate
+Cooch Behar,Jalpaiguri,90.2,92,SH 12A,Moderate
+Cooch Behar,Siliguri,136.92,136,NH 27,Moderate
+Dankuni,Bally,7.24,20,NH 19,Good
+Dankuni,Bardhaman,91.6,86,NH 19,Good
+Dankuni,Chinsurah,33.14,46,Durgapur Expressway,Heavy Traffic
+Dankuni,Serampore,12.26,31,Delhi Road,Heavy Traffic
+Darjeeling,Kalimpong,31.38,75,Peshok Road,Moderate
+Darjeeling,Kurseong,26.62,72,Hill Cart Road (NH 110),Moderate
+Darjeeling,Mirik,29.22,79,Rishi Road,Heavy Traffic
+Dhakuria,Ballygunge,3.12,7,Southern Avenue,Heavy Traffic
+Dhakuria,Gariahat,1.68,4,City Connector,Moderate
+Dhakuria,Jadavpur,1.41,3,City Arterial Road,Moderate
+Dhakuria,Ruby Crossing,4.2,10,Connector Road,Good
+Diamond Harbour,Behala,47.36,62,Diamond Harbour Road (NH 117),Excellent
+Diamond Harbour,Haldia,23.43,39,River Ferry / SH 4,Good
+Diamond Harbour,Kakdwip,45.25,58,NH 117,Moderate
+Digha,Kharagpur,97.8,117,NH 116B,Moderate
+Digha,Mandarmani,21.85,31,Coastal Road,Heavy Traffic
+Dum Dum,Airport (CCU),8.58,26,Jessore Road,Heavy Traffic
+Dum Dum,Sodepur,10.06,31,BT Road,Excellent
+Dum Dum,Ultadanga,4.31,10,VIP Road Connector,Heavy Traffic
+Durgapur,Bardhaman,77.17,84,NH 19,Excellent
+Durgapur,Bishnupur,60.92,89,State Highway,Moderate
+Durgapur,Raniganj,27.7,41,NH 19,Heavy Traffic
+Esplanade,BBD Bagh,1.4,4,City Main Road,Heavy Traffic
+Esplanade,Howrah Station,3.1,9,Bridge / City Road,Good
+Esplanade,Park Street,1.55,4,City Main Road,Moderate
+Esplanade,Sealdah Station,2.76,6,City Road,Heavy Traffic
+Farakka,Berhampore,100.88,115,NH 12,Good
+Farakka,Malda Town,41.98,66,NH 12,Good
+Garden Reach,Khidirpur,3.58,8,Port Area Road,Moderate
+Garia,Canning,41.13,62,State Highway 1,Heavy Traffic
+Garia,Jadavpur,5.34,13,Raja SC Mullick Road,Moderate
+Garia,Ruby Crossing,7.35,20,EM Bypass,Heavy Traffic
+Gariahat,Ballygunge,1.41,4,City Connector,Good
+Gariahat,Dhakuria,1.68,4,City Connector,Moderate
+Gariahat,Kalighat,3.18,9,Rashbehari Avenue,Heavy Traffic
+Gariahat,Ruby Crossing,4.15,9,Rashbehari Connector,Excellent
+Girish Park,College Street,1.8,4,Central Avenue,Heavy Traffic
+Girish Park,Shambazar,2.87,8,Central Avenue,Good
+Habra,Barasat,25.17,33,NH 12,Moderate
+Habra,Basirhat,40.02,56,State Highway 2,Excellent
+Haldia,Diamond Harbour,23.43,39,River Ferry / SH 4,Good
+Haldia,Kharagpur,96.32,115,NH 116,Excellent
+Hazra,Bhowanipore,1.28,3,City Main Road,Moderate
+Hazra,Kalighat,0.95,2,City Main Road,Moderate
+Hazra,Rabindra Sadan,2.59,8,SP Mukherjee Road,Heavy Traffic
+Howrah Station,BBD Bagh,1.76,5,Bridge / City Road,Moderate
+Howrah Station,Bally,10.26,28,GT Road,Moderate
+Howrah Station,Esplanade,3.1,9,Bridge / City Road,Good
+Howrah Station,Shambazar,4.53,11,Grand Trunk Road,Good
+Howrah Station,Taratala,11.97,31,Flyover Connector,Moderate
+Islampur,Raiganj,88.26,87,NH 12,Good
+Islampur,Siliguri,67.43,85,NH 12 / NH 27,Moderate
+Jadavpur,Dhakuria,1.41,3,City Arterial Road,Moderate
+Jadavpur,Garia,5.34,13,Raja SC Mullick Road,Moderate
+Jadavpur,Tollygunge,3.38,10,City Arterial Road,Excellent
+Jalpaiguri,Alipurduar,93.75,105,NH 317,Heavy Traffic
+Jalpaiguri,Cooch Behar,90.2,92,SH 12A,Moderate
+Jalpaiguri,Siliguri,50.51,70,NH 27,Heavy Traffic
+Jhargram,Kharagpur,48.58,63,NH 49,Good
+Jhargram,Midnapore,45.04,70,State Highway,Good
+Kakdwip,Bakkhali,43.97,74,NH 117,Heavy Traffic
+Kakdwip,Diamond Harbour,45.25,58,NH 117,Moderate
+Kalighat,Gariahat,3.18,9,Rashbehari Avenue,Heavy Traffic
+Kalighat,Hazra,0.95,2,City Main Road,Moderate
+Kalighat,New Alipore,2.19,6,City Connector,Good
+Kalimpong,Darjeeling,31.38,75,Peshok Road,Moderate
+Kalimpong,Kurseong,41.15,88,Rohini Road,Heavy Traffic
+Kalimpong,Siliguri,58.19,139,NH 10,Good
+Kalyani,Bandel,11.27,25,STKK Road,Good
+Kalyani,Krishnanagar,61.16,80,NH 12 Extension,Excellent
+Kalyani,Naihati,12.84,40,Kalyani Expressway,Good
+Kharagpur,Digha,97.8,117,NH 116B,Moderate
+Kharagpur,Haldia,96.32,115,NH 116,Excellent
+Kharagpur,Jhargram,48.58,63,NH 49,Good
+Kharagpur,Midnapore,14.13,30,NH 14,Good
+Khidirpur,BBD Bagh,5.94,19,Strand Road,Excellent
+Khidirpur,Garden Reach,3.58,8,Port Area Road,Moderate
+Khidirpur,Taratala,4.66,11,Port / City Road,Moderate
+Krishnanagar,Barasat,88.65,99,NH 12,Excellent
+Krishnanagar,Berhampore,98.42,105,NH 12,Moderate
+Krishnanagar,Kalyani,61.16,80,NH 12 Extension,Excellent
+Krishnanagar,Nabadwip,17.69,51,SH 8,Excellent
+Kurseong,Darjeeling,26.62,72,Hill Cart Road (NH 110),Moderate
+Kurseong,Kalimpong,41.15,88,Rohini Road,Heavy Traffic
+Kurseong,Siliguri,30.9,64,Hill Cart Road (NH 110),Good
+MG Road Kolkata,BBD Bagh,1.76,4,Central Avenue,Excellent
+MG Road Kolkata,College Street,1.3,3,City Center,Moderate
+Madhyamgram,Airport (CCU),6.3,14,Jessore Road (NH 12),Excellent
+Madhyamgram,Barasat,5.34,13,NH 12,Heavy Traffic
+Malda Town,Balurghat,79.64,85,SH 10,Heavy Traffic
+Malda Town,Farakka,41.98,66,NH 12,Good
+Malda Town,Raiganj,83.62,91,NH 12,Heavy Traffic
+Mandarmani,Digha,21.85,31,Coastal Road,Heavy Traffic
+Midnapore,Bankura,109.82,113,NH 60,Excellent
+Midnapore,Jhargram,45.04,70,State Highway,Good
+Midnapore,Kharagpur,14.13,30,NH 14,Good
+Mirik,Darjeeling,29.22,79,Rishi Road,Heavy Traffic
+Mirik,Siliguri,42.53,99,Mirik Highway,Good
+Murshidabad,Berhampore,12.73,30,State Highway,Good
+Murshidabad,Rampurhat,62.95,82,SH 11,Good
+Nabadwip,Krishnanagar,17.69,51,SH 8,Excellent
+Naihati,Barrackpore,19.5,26,State Highway,Excellent
+Naihati,Kalyani,12.84,40,Kalyani Expressway,Good
+New Alipore,Kalighat,2.19,6,City Connector,Good
+New Alipore,Taratala,1.82,4,City Connector,Moderate
+New Town Action Area 1,Airport (CCU),11.39,28,Major Arterial Road,Good
+New Town Action Area 1,New Town Action Area 2,6.01,19,Major Arterial Road,Good
+New Town Action Area 1,Salt Lake Sector 5,3.68,10,Major Arterial Road,Excellent
+New Town Action Area 1,Science City,10.88,29,EM Bypass Connector,Moderate
+New Town Action Area 2,New Town Action Area 1,6.01,19,Major Arterial Road,Good
+New Town Action Area 2,Rajarhat,4.98,14,New Town Main Road,Excellent
+Park Street,BBD Bagh,2.98,6,Red Road,Heavy Traffic
+Park Street,Ballygunge,4.22,13,City Main Road,Heavy Traffic
+Park Street,Esplanade,1.55,4,City Main Road,Moderate
+Park Street,Rabindra Sadan,2.0,6,City Main Road,Excellent
+Park Street,Science City,6.49,16,Park Circus Connector,Excellent
+Purulia,Asansol,86.78,102,NH 32,Moderate
+Purulia,Bankura,87.54,97,NH 314,Good
+Purulia,Raghunathpur,48.55,64,SH 5,Heavy Traffic
+Rabindra Sadan,Alipore,2.44,7,City Road,Excellent
+Rabindra Sadan,Bhowanipore,1.19,3,City Main Road,Good
+Rabindra Sadan,Hazra,2.59,8,SP Mukherjee Road,Heavy Traffic
+Rabindra Sadan,Park Street,2.0,6,City Main Road,Excellent
+Raghunathpur,Asansol,41.42,57,SH 5,Heavy Traffic
+Raghunathpur,Purulia,48.55,64,SH 5,Heavy Traffic
+Raiganj,Islampur,88.26,87,NH 12,Good
+Raiganj,Malda Town,83.62,91,NH 12,Heavy Traffic
+Rajarhat,New Town Action Area 2,4.98,14,New Town Main Road,Excellent
+Rajarhat,Salt Lake Sector 5,13.15,33,Major Arterial Road,Good
+Rampurhat,Murshidabad,62.95,82,SH 11,Good
+Rampurhat,Suri,47.91,63,NH 60,Good
+Raniganj,Asansol,22.42,29,NH 19,Good
+Raniganj,Durgapur,27.7,41,NH 19,Heavy Traffic
+Ruby Crossing,Dhakuria,4.2,10,Connector Road,Good
+Ruby Crossing,Garia,7.35,20,EM Bypass,Heavy Traffic
+Ruby Crossing,Gariahat,4.15,9,Rashbehari Connector,Excellent
+Ruby Crossing,Science City,3.97,9,EM Bypass,Excellent
+Ruby Crossing,Sealdah Station,8.59,25,EM Bypass Connector,Moderate
+Salt Lake Karunamoyee,Salt Lake Sector 5,3.1,10,Salt Lake Main Road,Heavy Traffic
+Salt Lake Karunamoyee,Ultadanga,4.72,10,Salt Lake Bypass,Good
+Salt Lake Sector 5,New Town Action Area 1,3.68,10,Major Arterial Road,Excellent
+Salt Lake Sector 5,Rajarhat,13.15,33,Major Arterial Road,Good
+Salt Lake Sector 5,Salt Lake Karunamoyee,3.1,10,Salt Lake Main Road,Heavy Traffic
+Salt Lake Sector 5,Science City,6.97,15,EM Bypass Extension,Heavy Traffic
+Science City,New Town Action Area 1,10.88,29,EM Bypass Connector,Moderate
+Science City,Park Street,6.49,16,Park Circus Connector,Excellent
+Science City,Ruby Crossing,3.97,9,EM Bypass,Excellent
+Science City,Salt Lake Sector 5,6.97,15,EM Bypass Extension,Heavy Traffic
+Sealdah Station,Ballygunge,5.99,19,Suburban Connector,Good
+Sealdah Station,College Street,1.51,4,City Road,Moderate
+Sealdah Station,Esplanade,2.76,6,City Road,Heavy Traffic
+Sealdah Station,Ruby Crossing,8.59,25,EM Bypass Connector,Moderate
+Sealdah Station,Ultadanga,4.45,13,EM Bypass Connector,Moderate
+Serampore,Barrackpore,4.36,10,Ferry / Local Connector,Good
+Serampore,Chandannagar,17.47,39,GT Road,Heavy Traffic
+Serampore,Dankuni,12.26,31,Delhi Road,Heavy Traffic
+Shambazar,Bally,8.33,19,BT Road,Excellent
+Shambazar,Girish Park,2.87,8,Central Avenue,Good
+Shambazar,Howrah Station,4.53,11,Grand Trunk Road,Good
+Shambazar,Ultadanga,2.1,5,Kazi Nazrul Islam Avenue,Excellent
+Siliguri,Cooch Behar,136.92,136,NH 27,Moderate
+Siliguri,Islampur,67.43,85,NH 12 / NH 27,Moderate
+Siliguri,Jalpaiguri,50.51,70,NH 27,Heavy Traffic
+Siliguri,Kalimpong,58.19,139,NH 10,Good
+Siliguri,Kurseong,30.9,64,Hill Cart Road (NH 110),Good
+Siliguri,Mirik,42.53,99,Mirik Highway,Good
+Sodepur,Barrackpore,10.8,32,BT Road,Excellent
+Sodepur,Dum Dum,10.06,31,BT Road,Excellent
+Suri,Bolpur Santiniketan,38.15,48,SH 7,Moderate
+Suri,Rampurhat,47.91,63,NH 60,Good
+Taratala,Behala,1.34,3,Diamond Harbour Road,Moderate
+Taratala,Howrah Station,11.97,31,Flyover Connector,Moderate
+Taratala,Khidirpur,4.66,11,Port / City Road,Moderate
+Taratala,New Alipore,1.82,4,City Connector,Moderate
+Tollygunge,Behala,4.14,13,Diamond Harbour Road Connector,Excellent
+Tollygunge,Jadavpur,3.38,10,City Arterial Road,Excellent
+Ultadanga,Airport (CCU),12.46,33,VIP Road,Heavy Traffic
+Ultadanga,Dum Dum,4.31,10,VIP Road Connector,Heavy Traffic
+Ultadanga,Salt Lake Karunamoyee,4.72,10,Salt Lake Bypass,Good
+Ultadanga,Sealdah Station,4.45,13,EM Bypass Connector,Moderate
+Ultadanga,Shambazar,2.1,5,Kazi Nazrul Islam Avenue,Excellent

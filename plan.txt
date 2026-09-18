@@ -1,0 +1,224 @@
+                         🚇 METRO ROUTE FINDER
+                                  │
+                                  ▼
+                    ┌──────────────────────────┐
+                    │  1. Learn / Build Graph  │
+                    │                          │
+                    │ Stations = Nodes         │
+                    │ Connections = Edges      │
+                    └────────────┬─────────────┘
+                                 │
+                                 ▼
+                    ┌──────────────────────────┐
+                    │ 2. Implement Dijkstra    │
+                    │                          │
+                    │ Distance                 │
+                    │ Relaxation               │
+                    │ Priority Queue            │
+                    └────────────┬─────────────┘
+                                 │
+                                 ▼
+                    ┌──────────────────────────┐
+                    │ 3. Reconstruct Path      │
+                    │                          │
+                    │ parent[]                 │
+                    │                          │
+                    │ A → B → C → D            │
+                    └────────────┬─────────────┘
+                                 │
+                                 ▼
+                    ┌──────────────────────────┐
+                    │ 4. Real Station Names    │
+                    │                          │
+                    │ "Dakshineswar" → ID 0    │
+                    │ "Baranagar"    → ID 1    │
+                    └────────────┬─────────────┘
+                                 │
+                                 ▼
+                    ┌──────────────────────────┐
+                    │ 5. Metro Data            │
+                    │                          │
+                    │        CSV               │
+                    │ station1,station2,km     │
+                    └────────────┬─────────────┘
+                                 │
+                                 ▼
+                    ┌──────────────────────────┐
+                    │ 6. C++ CSV Loader        │
+                    │                          │
+                    │ CSV → Stations + Graph   │
+                    └────────────┬─────────────┘
+                                 │
+                                 ▼
+                    ┌──────────────────────────┐
+                    │ 7. C++ Metro Engine      │
+                    │                          │
+                    │ CSV                      │
+                    │  ↓                       │
+                    │ Graph                    │
+                    │  ↓                       │
+                    │ Dijkstra                 │
+                    │  ↓                       │
+                    │ Route                    │
+                    └────────────┬─────────────┘
+                                 │
+                                 ▼
+                    ┌──────────────────────────┐
+                    │ 8. Command-Line C++ App  │
+                    │                          │
+                    │ metro.exe                │
+                    │                          │
+                    │ source → destination     │
+                    └────────────┬─────────────┘
+                                 │
+                                 ▼
+                    ┌──────────────────────────┐
+                    │ 9. C++ Arguments         │
+                    │                          │
+                    │ argv[1] = source         │
+                    │ argv[2] = destination    │
+                    └────────────┬─────────────┘
+                                 │
+                                 ▼
+                    ┌──────────────────────────┐
+                    │ 10. C++ JSON Output      │
+                    │                          │
+                    │ {                        │
+                    │   route: [...],          │
+                    │   distance: ...           │
+                    │ }                        │
+                    └────────────┬─────────────┘
+                                 │
+                                 ▼
+                         🐍 PYTHON LAYER
+                                 │
+                                 ▼
+                    ┌──────────────────────────┐
+                    │ 11. Python subprocess    │
+                    │                          │
+                    │ Python → metro.exe       │
+                    │ Python → arguments       │
+                    └────────────┬─────────────┘
+                                 │
+                                 ▼
+                    ┌──────────────────────────┐
+                    │ 12. Parse JSON           │
+                    │                          │
+                    │ C++ JSON → Python dict   │
+                    └────────────┬─────────────┘
+                                 │
+                                 ▼
+                         ⚡ FASTAPI LAYER
+                                 │
+                                 ▼
+                    ┌──────────────────────────┐
+                    │ 13. FastAPI              │
+                    │                          │
+                    │ GET /route               │
+                    │                          │
+                    │ ?from=...                │
+                    │ ?to=...                  │
+                    └────────────┬─────────────┘
+                                 │
+                                 ▼
+                    ┌──────────────────────────┐
+                    │ 14. Python Service Layer │
+                    │                          │
+                    │ Validate request         │
+                    │ Call C++ engine          │
+                    │ Process result            │
+                    └────────────┬─────────────┘
+                                 │
+                                 ▼
+                    ┌──────────────────────────┐
+                    │ 15. API Response         │
+                    │                          │
+                    │ JSON                     │
+                    │                          │
+                    │ route                    │
+                    │ distance                 │
+                    │ stations                 │
+                    └────────────┬─────────────┘
+                                 │
+                                 ▼
+                         🌐 FRONTEND
+                                 │
+                                 ▼
+                    ┌──────────────────────────┐
+                    │ 16. User Interface       │
+                    │                          │
+                    │ From: [________]         │
+                    │ To:   [________]         │
+                    │                          │
+                    │      [Find Route]        │
+                    └────────────┬─────────────┘
+                                 │
+                                 ▼
+                    ┌──────────────────────────┐
+                    │ 17. Display Route        │
+                    │                          │
+                    │ 🚇 Dakshineswar          │
+                    │       ↓                  │
+                    │ 🚇 Baranagar             │
+                    │       ↓                  │
+                    │ 🚇 Noapara               │
+                    │       ↓                  │
+                    │ 🚇 ...                   │
+                    │                          │
+                    │ Distance: XX km          │
+                    └────────────┬─────────────┘
+                                 │
+                                 ▼
+                    ╔══════════════════════════╗
+                    ║    🚇 FINAL PROJECT      ║
+                    ║                          ║
+                    ║ Frontend                 ║
+                    ║      ↓                   ║
+                    ║ FastAPI                  ║
+                    ║      ↓                   ║
+                    ║ Python                   ║
+                    ║      ↓                   ║
+                    ║ C++ Metro Engine         ║
+                    ║      ↓                   ║
+                    ║ Dijkstra                 ║
+                    ║      ↓                   ║
+                    ║ Real Metro Data          ║
+                    ╚══════════════════════════╝
+
+
+
+                 BASIC VERSION
+                       │
+                       ▼
+              ┌─────────────────┐
+              │ Multiple Lines  │
+              └────────┬────────┘
+                       ▼
+              ┌─────────────────┐
+              │ Interchange     │
+              │ Stations        │
+              └────────┬────────┘
+                       ▼
+              ┌─────────────────┐
+              │ Minimum Time    │
+              │ Route           │
+              └────────┬────────┘
+                       ▼
+              ┌─────────────────┐
+              │ Minimum Stops   │
+              └────────┬────────┘
+                       ▼
+              ┌─────────────────┐
+              │ Fare Calculation│
+              └────────┬────────┘
+                       ▼
+              ┌─────────────────┐
+              │ Line Changes    │
+              └────────┬────────┘
+                       ▼
+              ┌─────────────────┐
+              │ Real-time Data  │
+              │ (later)         │
+              └────────┬────────┘
+                       ▼
+              🚇 FULL METRO APP
