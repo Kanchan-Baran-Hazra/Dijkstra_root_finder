@@ -1,14 +1,17 @@
 import subprocess
+import json
 
 try:
     result=subprocess.run(
-        ["a.exe","kelogoda","sonakhali"],
+        ["a.exe","Alipurduar","Raghunathpur","2"],
         capture_output=True,
         text=True,
         check=True
     )
     
-    print(result.stdout)
+    # print(result.stdout)
+    data=json.loads(result.stdout)
+    print(json.dumps(data))
 except subprocess.CalledProcessError as e:
     print(f"error: {e.stderr}")
 except Exception as e:

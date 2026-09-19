@@ -34,7 +34,7 @@ for i,row in df.iterrows():
 
 # for i,row in df.iterrows():
 #     # print(f"{row['Source']},{row['Destination']},{row['Distance_km']},{row['Travel_Time_min']}")
-#     print(f'g.addEdge({stations[row["Source"]]},{stations[row["Destination"]]},{row['Distance_km']});')
+#     print(f'g.addEdge({stations[row["Source"]]},{stations[row["Destination"]]},{row['Distance_km']},{row['Travel_Time_min']});')
 
 
 
@@ -43,9 +43,4 @@ for i,row in df.iterrows():
 
 
 # print(f"Index: {i}-->Source:{row['Source']},Destination:{row['Destination']},Distance_km:{row['Distance_km']},Travel_Time_min:{row['Travel_Time_min']}")
-# def main():
-#     print("Hello from z-dsa-project!")
 
-
-# if __name__ == "__main__":
-#     main()
