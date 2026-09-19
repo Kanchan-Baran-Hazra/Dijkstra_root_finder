@@ -14,7 +14,7 @@
                     │                          │
                     │ Distance                 │
                     │ Relaxation               │
-                    │ Priority Queue            │
+                    │ Priority Queue           │
                     └────────────┬─────────────┘
                                  │
                                  ▼
