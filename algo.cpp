@@ -7,6 +7,11 @@ using namespace std;
 // 3. Reconstruct Path(parent)
 // 4. Real Station Names
 // 6. C++ CSV Loader
+// 7. Add time data from src to destination
+// 7. C++ Metro Engine
+// 8. Command-Line C++ App
+// 9. C++ Arguments
+
 
 // create graph
 class Graph{
@@ -86,20 +91,8 @@ class Graph{
     }
 };
 
-int main(){
-    // cout<<"hello"<<endl;
-    string src="kelogoda";
-    cout<<"Enter src:";
-    cin>>src;
-
-    Graph g(6);                        // 88 node ->>88
-    vector<float> dist(g.V,INT_MAX);
-    vector<float> time_t(g.V,INT_MAX);
-    // dist[stations[src]]=0;           //sourse to source distance is 0
-    vector<int> parent(g.V,-1);
+unordered_map<string,int> add_stations(){
     unordered_map<string,int> stations;
-
-    string st_name="";
 
     stations["kelogoda"]=0;
     stations["panchgechia"]=1;
@@ -107,11 +100,13 @@ int main(){
     stations["kachari"]=3;
     stations["gochhati"]=4;
     stations["sonakhali"]=5;
-    
-    
-    dist[stations[src]]=0;
-    time_t[stations[src]]=0;
 
+    return stations;
+}
+
+Graph constract_graph(){
+    Graph g(6);                         // 88 node ->>88
+    
     g.addEdge(0,1,2.2,5);    //  0 --> 1(2)
     g.addEdge(0,2,4.1,7);    //  0 --> 2(4)
     g.addEdge(1,2,1.1,3);    //  1 --> 2(1)
@@ -121,10 +116,52 @@ int main(){
     g.addEdge(3,5,1.1,9);    //  3 --> 5(1)
     g.addEdge(4,5,5.1,4.9);    //  4 --> 5(5)
 
-    
-    g.dijkstra(dist,parent,stations[src],time_t);
+    return g;
+}
 
-    cout<<"Distances:"<<endl;
+int main(int argc,char* argv[]){
+    // cout<<"hello"<<endl;
+
+    // string st_name="";
+    // string src="kelogoda";
+    // cout<<"Enter src:";
+    // cin>>src;
+
+    if (argc != 3) {
+        cerr << "Usage: metro.exe <source> <destination>" << endl;
+        return 1;
+    }
+
+    string src = argv[1];          // source
+    string st_name = argv[2];      // destination
+
+    Graph g=constract_graph();                                //constract all node and edge;
+    unordered_map<string,int> stations=add_stations();        // Add stations name and the IDe
+
+    auto srcIt = stations.find(src);
+    auto destIt = stations.find(st_name);
+    
+    if (srcIt == stations.end()) {
+        cerr << "Source station not found: " << src << endl;
+        return 1;
+    }
+    
+    if (destIt == stations.end()) {
+        cerr << "Destination station not found: " << st_name << endl;
+        return 1;
+    }
+
+    vector<float> dist(g.V,INT_MAX);
+    vector<float> time_t(g.V,INT_MAX);           
+    vector<int> parent(g.V,-1);
+    
+    dist[stations[src]]=0;                                    //sourse to source distance is 0
+    time_t[stations[src]]=0;
+
+    
+    g.dijkstra(dist,parent,stations[src],time_t);            // Call the main function
+
+    cout<<"\nDistances:"<<endl;
     for(int i=0;i<dist.size();i++){
         cout<<dist[i]<<" ";
     }
@@ -136,20 +173,33 @@ int main(){
     
     cout<<endl;
 
-    while(true){
-        cout<<"\nAvalable stations:"<<endl;
-        cout<< "0. Kelegoda(src)"<<endl;
-        cout<< "1. Panchgechia"<<endl;
-        cout<< "2. Barosot"<<endl;
-        cout<< "3. Kachari"<<endl;
-        cout<< "4. Gochhati"<<endl;
-        cout<< "5. Sonakhali"<<endl;
+    cout<<"\nAvalable stations:"<<endl;
+    cout<< "0. Kelegoda(src)"<<endl;
+    cout<< "1. Panchgechia"<<endl;
+    cout<< "2. Barosot"<<endl;
+    cout<< "3. Kachari"<<endl;
+    cout<< "4. Gochhati"<<endl;
+    cout<< "5. Sonakhali"<<endl;
 
-        cout<<"Chose one station name to see ditance:";
-        cin>>st_name;
-        cout<<"Cost:"<<dist[stations[st_name]]<<endl;
+    cout<<"\nCost:"<<dist[stations[st_name]]<<endl;
+    cout<<"Time:"<<time_t[stations[st_name]]<<endl;
+    g.constract_path(parent,stations[st_name],stations);
 
-        g.constract_path(parent,stations[st_name],stations);
-    }
+    // while(true){
+    //     cout<<"\nAvalable stations:"<<endl;
+    //     cout<< "0. Kelegoda(src)"<<endl;
+    //     cout<< "1. Panchgechia"<<endl;
+    //     cout<< "2. Barosot"<<endl;
+    //     cout<< "3. Kachari"<<endl;
+    //     cout<< "4. Gochhati"<<endl;
+    //     cout<< "5. Sonakhali"<<endl;
+
+    //     cout<<"\nChose one station name to see ditance:";
+    //     cin>>st_name;
+    //     cout<<"\nCost:"<<dist[stations[st_name]]<<endl;
+    //     cout<<"\nTime:"<<time_t[stations[st_name]]<<endl;
+
+    //     g.constract_path(parent,stations[st_name],stations);
+    // }
     return 0;
 }
