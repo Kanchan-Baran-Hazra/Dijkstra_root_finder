@@ -35,7 +35,7 @@ async def get_stations():
             detail=f"Error: {e}"
         )
 
-@service_route.post("/path")
+@service_route.get("/path")
 async def get_path(source:str,destination:str):
     try:
         l=source.split()

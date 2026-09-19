@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 650px;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #666;
+}
+
+.card,
+.result {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background: white;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #222;
+    color: white;
+}
+
+button:hover {
+    background: #444;
+}
+
+.loading {
+    text-align: center;
+    margin: 20px;
+}
+
+.error {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #ffe5e5;
+    color: #b00020;
+}
+
+.result {
+    margin-top: 25px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.result h2 {
+    margin-bottom: 20px;
+}
+
+
+.route {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    min-width: 0;
+}
+
+.station {
+    display: inline-block;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: #eee;
+
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+
+
+
+
+.arrow {
+    flex-shrink: 0;
+    font-weight: bold;
+}
+
+.distance {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.distance {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.distance div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.distance span {
+    color: #666;
+}
+
+.distance strong {
+    font-size: 18px;
+}
