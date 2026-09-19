@@ -5,6 +5,7 @@ using namespace std;
 // 1. Learn / Build Graph
 // 2. Implement Dijkstra 
 // 3. Reconstruct Path(parent)
+// 4. Real Station Names
 
 // create graph
 class Graph{
@@ -79,6 +80,16 @@ int main(){
     vector<int> dist(g.V,INT_MAX);
     dist[0]=0;           //sourse to source distance is 0
     vector<int> parent(g.V,-1);
+    unordered_map<string,int> stations;
+
+    string st_name="";
+
+    stations["kelogoda"]=0;
+    stations["panchgechia"]=1;
+    stations["barasot"]=2;
+    stations["kachari"]=3;
+    stations["gochhati"]=4;
+    stations["sonakhali"]=5;
 
 
     g.addEdge(0,1,2);    //  0 --> 1(2)
@@ -107,6 +118,21 @@ int main(){
     //     cout<<i<<" ";
     // }
 
-    g.constract_path(parent,3);
+    // g.constract_path(parent,3);
+
+    while(true){
+        cout<<"\nAvalable stations:"<<endl;
+        cout<< "0. Kelegoda(src)"<<endl;
+        cout<< "1. Panchgechia"<<endl;
+        cout<< "2. Barosot"<<endl;
+        cout<< "3. Kachari"<<endl;
+        cout<< "4. Gochhati"<<endl;
+        cout<< "5. Sonakhali"<<endl;
+
+        cout<<"Chose one station name to see ditance:";
+        cin>>st_name;
+
+        g.constract_path(parent,stations[st_name]);
+    }
     return 0;
 }
