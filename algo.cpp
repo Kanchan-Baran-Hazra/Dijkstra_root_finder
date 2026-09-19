@@ -26,7 +26,9 @@ class Graph{
         
 
         for(int i=0;i<dist.size();i++){
-            if(dist[i]==0) q.push({0,i});
+            if(dist[i]==0){
+                q.push({0,i});
+            }
         }
 
         while (q.size()!=0){
@@ -44,11 +46,30 @@ class Graph{
 
                 if(dist[node_val]>dist[s_val]+node_wt){   // edge relaxation stape
                     dist[node_val]=dist[s_val]+node_wt;
+                    parent[node_val]=s_val;
                 }
                 q.push({dist[s_val]+node_wt,node_val});
             }
         }
         
+    }
+
+    void helper_constract_path(vector<int>& parent,int dist,stack<int>& st){
+        if(parent[dist]==-1) return;
+        st.push(parent[dist]);
+        helper_constract_path(parent,parent[dist],st);
+    }
+
+    void constract_path(vector<int>& parent,int dist){
+        stack<int> st;
+        st.push(dist);
+        helper_constract_path(parent,dist,st);
+
+        while (st.size()!=0){
+            cout<<st.top();
+            st.pop();
+            if(st.size()!=0) cout<<"-->";
+        }
     }
 };
 
@@ -71,8 +92,21 @@ int main(){
 
     g.dijkstra(dist,parent);
 
+    cout<<"Distances:"<<endl;
     for(int i=0;i<dist.size();i++){
         cout<<dist[i]<<" ";
     }
+    
+    cout<<endl;
+    // cout<<"Parents:"<<endl;
+    // for(int i=0;i<parent.size();i++){
+    //     cout<<parent[i]<<" ";
+    // }
+    // cout<<endl;
+    // for(int i=0;i<dist.size();i++){
+    //     cout<<i<<" ";
+    // }
+
+    g.constract_path(parent,3);
     return 0;
 }
