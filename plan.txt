@@ -85,7 +85,7 @@
                     │                          │
                     │ {                        │
                     │   route: [...],          │
-                    │   distance: ...           │
+                    │   distance: ...          │
                     │ }                        │
                     └────────────┬─────────────┘
                                  │
@@ -126,7 +126,7 @@
                     │                          │
                     │ Validate request         │
                     │ Call C++ engine          │
-                    │ Process result            │
+                    │ Process result           │
                     └────────────┬─────────────┘
                                  │
                                  ▼
