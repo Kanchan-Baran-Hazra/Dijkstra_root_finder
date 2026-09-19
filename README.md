@@ -23,27 +23,7 @@ The core route calculation is implemented in C++ using Dijkstra's algorithm.
 
 🏗️ Architecture
 
-┌─────────────────────────────┐
-│          Frontend           │
-│      HTML / CSS / JS        │
-└──────────────┬──────────────┘
-               │ HTTP
-               ▼
-┌─────────────────────────────┐
-│          FastAPI            │
-│        Python Backend       │
-└──────────────┬──────────────┘
-               │ subprocess
-               ▼
-┌─────────────────────────────┐
-│          C++ Engine         │
-│     Graph + Dijkstra        │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│        Metro CSV Data       │
-└─────────────────────────────┘
+![Architecture](images/architecture.png)
 
 Why C++ + Python?
 
@@ -111,36 +91,7 @@ Kalighat
 📂 Project Structure
 
 A simplified structure looks like:
-
-metro-route-finder/
-|
-|__ DATA/
-|     |
-|     |__ kolkata_west_bengal_dijkstra_routes.csv
-|  
-│   
-├── src/
-│   ├── api/
-|   |    |-- service.py
-|   |    |
-|   |
-│   ├── engine/
-|   |    |-- a.exe
-|   |    |-- algo.cpp
-|   |    
-│   ├── main.py
-|
-|-- api.py (test_api)
-|
-|-- load_data.py (data loader)
-│
-├── ui/
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
-│
-├── README.md
-└── requirements.txt
+![metro-route-finder](images/p_structure.png)
 
 «The exact structure may vary depending on the current implementation.»
 
@@ -167,6 +118,7 @@ This allows the graph to efficiently work with integer vertex IDs while the appl
 ---
 
 🔌 API
+![api](images/api.png)
 
 The FastAPI backend currently exposes three main endpoints.
 
@@ -223,6 +175,8 @@ Example response:
 ---
 
 🖥️ Frontend
+
+![ui](images/ui.png)
 
 The frontend is intentionally built using simple web technologies:
 
