@@ -3,6 +3,7 @@ from fastapi.responses import JSONResponse
 import subprocess
 import json
 from pathlib import Path
+import os
 
 
 service_route=APIRouter()
@@ -15,6 +16,9 @@ FILE_PATH = Path(BASE_DIR / "engine" / "a.exe")
 
 # Ensure the executable has execution permissions on Linux
 # Run this once or via command line: os.chmod(FILE_PATH, 0o755)
+# Grant read, write, and execute permissions (chmod +x equivalent)
+if FILE_PATH.exists():
+    os.chmod(FILE_PATH, 0o755)
 
 @service_route.get('/stations')
 async def get_stations():
