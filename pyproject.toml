@@ -9,4 +9,5 @@ dependencies = [
     "numpy>=2.5.3",
     "pandas>=3.0.6",
     "sqlalchemy>=2.0.54",
+    "uvicorn>=0.53.0",
 ]

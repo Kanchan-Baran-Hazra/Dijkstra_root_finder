@@ -2,17 +2,25 @@ from fastapi import APIRouter,HTTPException,status
 from fastapi.responses import JSONResponse
 import subprocess
 import json
+from pathlib import Path
 
 
 service_route=APIRouter()
 
-FILE_PATH=r"src\engine\a.exe"
+# Builds a cross-platform path relative to your project root
+BASE_DIR = Path(__file__).resolve().parent.parent  # Adjust depending on where script lives
+# print(BASE_DIR)
+FILE_PATH = Path(BASE_DIR / "engine" / "a.exe")
+# print(FILE_PATH)
+
+# Ensure the executable has execution permissions on Linux
+# Run this once or via command line: os.chmod(FILE_PATH, 0o755)
 
 @service_route.get('/stations')
 async def get_stations():
     try:
         result=subprocess.run(
-            [FILE_PATH,"","","1"],                      # 1 for get the all station names
+            [str(FILE_PATH),"","","1"],                      # 1 for get the all station names
             capture_output=True,
             text=True,
             check=True
