@@ -11,7 +11,7 @@ service_route=APIRouter()
 # Builds a cross-platform path relative to your project root
 BASE_DIR = Path(__file__).resolve().parent.parent  # Adjust depending on where script lives
 # print(BASE_DIR)
-FILE_PATH = Path(BASE_DIR / "engine" / "algo_linux")
+FILE_PATH = Path(BASE_DIR / "engine" / "algo_linux")  #a.exe for window
 # print(FILE_PATH)
 
 # Ensure the executable has execution permissions on Linux
