@@ -1,5 +1,5 @@
 
-const API_BASE_URL = "http://127.0.0.1:8000/api/v10/service"
+const API_BASE_URL = "https://dijkstra-root-finder-1.onrender.com/api/v10/service"
 const sourceSelect = document.getElementById("source");
 const destinationSelect = document.getElementById("destination");
 
